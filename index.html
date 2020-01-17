@@ -33,7 +33,7 @@
                 </div>
 
                 <div class="col m3" id="headerBtnContainer">
-                    <a class="waves-effect waves-teal btn-flat right">
+                    <a class="waves-effect waves-teal btn-flat right" id="recipeBtn">
                         <i class="material-icons md-24">menu_book</i>
                         <!-- The recipe button has a seperate span tag so its text can be easily changed to 'Back' once clicked -->
                         <span id="btnTxt"> Recipes</span>
@@ -67,8 +67,28 @@
 
 </div>
 
+<!-- Below is Materialize's modal. The text can be changed
+    and updated using the 'modalHeader' and 'modalBody' ids.
+    
+    To open the model, either add href="#recipeModal" to a link
+    or add data-target="recipeModal" to a button.
 
-
+    It can be opened through javascript with
+    'M.Modal.getInstance(recipeModal).open();'
+    which can be pasted in the chrome console
+    or used in the javascript 
+    (after updating modal text, that can be called)
+-->
+<div id="recipeModal" class="modal bottom-sheet">
+    <div class="modal-header">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat right"><h6>X</h6></a>
+    </div>
+    <div class="modal-content">
+        <h4 id="modalHeader">Modal Header</h4>
+        <div id="modalBody"></div>
+    </div>
+    
+</div>
 
 
 </body>
