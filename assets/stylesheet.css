@@ -1,0 +1,109 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.container {
+    margin-top: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#header{
+    background-color: aqua;
+    height: 75px;
+    margin: 15px 10px 0px 10px;
+    border: 2px solid black;
+    overflow: hidden;
+    text-align: initial;
+}
+
+#logoContainer {
+    height: 75px;
+}
+
+#logo {
+    height: 71px;
+    margin-left: -11px;
+}
+
+.material-icons.md-24 { 
+    font-size: 24px;
+}
+
+#btnTxt {
+    position: relative;
+    top: -6px;
+}
+
+#headerBtnContainer{
+    height: 100%;
+    font-size: 36px;
+    padding: 16px;
+    width: 156px;
+    background-color: transparent;
+}
+
+#main,#sideTaco {
+    border: 2px solid black;
+    height: 400px;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 784px) {
+    #logoContainer {
+        width: 300px;
+        animation-name: logoAnimateIn;
+        animation-duration: 1s;
+        margin-left: -80px;
+    }
+    #headerBtnContainer {
+        width: 185px;
+        animation-name: btnColorIn;
+        animation-duration: 2s;
+        background-color: white;
+    }
+    #header {
+        animation-name: colorChangeIn;
+        animation-duration: 1s;
+        background-color: white;
+    }
+}
+
+@media only screen and (min-width: 784px) {
+    #logoContainer {
+        animation-name: logoAnimateOut;
+        animation-duration: 1s;
+        margin-left: 0px;
+    }
+    #header {
+        animation-name: colorChangeOut;
+        animation-duration: 1s;
+        background-color: aqua;
+    }
+}
+
+@keyframes colorChangeIn {
+    from {background-color: aqua;}
+    to {background-color: white;}
+}
+
+@keyframes colorChangeOut {
+    from {background-color: white;}
+    to {background-color: aqua;}
+}
+
+@keyframes btnColorIn {
+    from {background-color: transparent;}
+    to {background-color: white;}
+}
+
+@keyframes logoAnimateIn {
+    from {margin-left: 0px;}
+    to {margin-left: -80px;}
+}
+
+@keyframes logoAnimateOut {
+    from {margin-left: -80px;}
+    to {margin-left: 0px;}
+}
