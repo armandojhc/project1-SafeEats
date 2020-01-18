@@ -1,5 +1,3 @@
-// var tacoGeneratorApi = ;
-
 $("button").on("click", function(event) {
     event.preventDefault();
     var x = $(this).data("search");
@@ -10,7 +8,7 @@ $("button").on("click", function(event) {
     $.ajax({ url: queryURL, method: "GET" })
         .done(function(reponse) {
             console.log(response);
-            // console.log(reponse.data[0].rating);
+
         });
 });
 
@@ -20,5 +18,5 @@ var queryURL = "https://taco-randomizer.herokuapp.com/random/";
 $.ajax({ url: queryURL, method: "GET" })
     .done(function(response) {
         console.log(response);
-        // console.log(reponse.data[0].rating);
+
     })
