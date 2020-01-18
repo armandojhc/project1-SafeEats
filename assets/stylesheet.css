@@ -5,7 +5,8 @@ body {
 
 .container {
     margin-top: 150px;
-    border: 2px solid black;
+    border: 2px solid transparent;
+    box-shadow: 0px 0px 50px 1px rgba(0, 0, 0, 0.432);
     border-radius: 10px;
 }
 
@@ -55,7 +56,43 @@ body {
     width: 80%;
     max-width: 1000px;
     margin: 0 auto;
+    min-height: 75%;
+    border-radius: 15px;
+    background-color: lemonchiffon;
 }
+
+#gifContainer {
+    width: 80%;
+    height: 200px;
+    border: 2px black solid;
+    border-bottom: dashed;
+    margin: 0 auto;
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px;
+    background-color: white;
+}
+
+#recipeContainer {
+    width: 80%;
+    margin: 0 auto;
+    border: 2px black solid;
+    border-top: none;
+    min-height: 300px;
+    border-radius: 0px 0px 10px 10px;
+    padding: 10px;
+    background-color: white;
+}
+
+#recipeModal::-webkit-scrollbar {
+    width: 15px;
+    background-color: tan;
+    border-radius: 0px 15px 15px 0px;
+}
+#recipeModal::-webkit-scrollbar-thumb {
+    background-color: seagreen;
+    border-radius: 0px 15px 15px 0px;
+}
+
 
 #btnTxt {
     color: black;
@@ -64,6 +101,26 @@ body {
 
 .btn {
     background-color: white;
+}
+
+#goToRecipeBtn {
+    margin-top: 30px;
+    height: 50px;
+    background-color: palegreen;
+    border-radius: 15px;
+    font-size: 25px;
+    width: 80%;
+}
+
+#goToRecipeBtn:hover{
+    animation-name: recipeBtnColor;
+    animation-duration: 500ms;
+    background-color:green;
+    color: white;
+}
+@keyframes recipeBtnColor {
+    from {background-color: palegreen;color:black;}
+    to {background-color: green;color:white;}
 }
 
 @media only screen and (max-width: 784px) {
