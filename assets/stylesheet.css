@@ -29,7 +29,7 @@ body {
 
 .material-icons.md-24 { 
     font-size: 24px;
-    color: white;
+    color: black;
 }
 
 #btnTxt {
@@ -42,7 +42,6 @@ body {
     font-size: 36px;
     padding: 16px;
     width: 156px;
-    background-color: transparent;
 }
 
 #main,#sideTaco {
@@ -59,8 +58,12 @@ body {
 }
 
 #btnTxt {
-    color: white;
+    color: black;
     font-weight: bolder;
+}
+
+.btn {
+    background-color: white;
 }
 
 @media only screen and (max-width: 784px) {
