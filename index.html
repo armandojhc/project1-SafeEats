@@ -37,7 +37,7 @@
                 </div>
 
                 <div class="col m3" id="headerBtnContainer">
-                    <a class="waves-effect waves-teal btn-flat right" id="recipeBtn">
+                    <a class="waves-effect waves-teal btn right" id="recipeBtn">
                         <i class="material-icons md-24">menu_book</i>
                         <!-- The recipe button has a seperate span tag so its text can be easily changed to 'Back' once clicked -->
                         <span id="btnTxt"> Recipes</span>
@@ -72,7 +72,7 @@
 </div>
 
 <!-- Below is Materialize's modal. The text can be changed
-    and updated using the 'modalHeader' and 'modalBody' ids.
+    and updated using the '#modalHeader' and '#recipeContainer' ids.
     
     To open the model, either add href="#recipeModal" to a link
     or add data-target="recipeModal" to a button.
@@ -88,8 +88,12 @@
         <a href="#!" class="modal-close waves-effect waves-green btn-flat right"><h6>X</h6></a>
     </div>
     <div class="modal-content">
-        <h4 id="modalHeader">Modal Header</h4>
-        <div id="modalBody"></div>
+        <h4 id="modalHeader">Recipe Name</h4>
+        <div id="modalBody">
+            <div id="gifContainer">Gif Here</div>
+            <div id="recipeContainer">Recipe Here</div>
+            <button href="#!" class="modal-close" id="goToRecipeBtn">Go To Recipe</button>
+        </div>
     </div>
     
 </div>
