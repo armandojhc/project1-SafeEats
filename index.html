@@ -3,25 +3,101 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- Materialize css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="assets/stylesheet.css">
+    <!-- Roboto font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Font icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <!-- Our CSS -->
+    <link rel="stylesheet" href="assets/stylesheet.css" type="text/css">
+
     <title>Safe Eats</title>
 </head>
 
 <body>
 
+<div class="container">
 
+    <header>
+        
+        <div class="row">
 
+            <div id="header">
+                
+                <div class="col m9" id="logoContainer">
+                    <img src="assets/images/logo.png" alt="Safe Eats Logo" id="logo">
+                </div>
 
+                <div class="col m3" id="headerBtnContainer">
+                    <a class="waves-effect waves-teal btn-flat right" id="recipeBtn">
+                        <i class="material-icons md-24">menu_book</i>
+                        <!-- The recipe button has a seperate span tag so its text can be easily changed to 'Back' once clicked -->
+                        <span id="btnTxt"> Recipes</span>
+                    </a>
+                </div>
+            </div>
 
+        </div>
+
+    </header>
+
+    <div class="row">
+        
+        <div class="col m8">
+
+            <div id="main">
+                id='main'
+            </div>
+
+        </div>
+
+        <div class="col m4">
+
+            <div id="sideTaco">
+                id='sideTaco'
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Below is Materialize's modal. The text can be changed
+    and updated using the 'modalHeader' and 'modalBody' ids.
+    
+    To open the model, either add href="#recipeModal" to a link
+    or add data-target="recipeModal" to a button.
+
+    It can be opened through javascript with
+    'M.Modal.getInstance(recipeModal).open();'
+    which can be pasted in the chrome console
+    or used in the javascript 
+    (after updating modal text, that can be called)
+-->
+<div id="recipeModal" class="modal bottom-sheet">
+    <div class="modal-header">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat right"><h6>X</h6></a>
+    </div>
+    <div class="modal-content">
+        <h4 id="modalHeader">Modal Header</h4>
+        <div id="modalBody"></div>
+    </div>
+    
+</div>
 
 
 </body>
 
+<!-- Materialize Javascript-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script defer src="assets/javasript.js"></script>
+<!-- jQuery Javascript-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Our Javascript-->
+<script src="assets/javasript.js"></script>
 
 </html>
