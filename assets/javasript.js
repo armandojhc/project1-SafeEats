@@ -1,16 +1,4 @@
-<<<<<<< HEAD
 function tacoGenerator() {
-=======
-M.AutoInit();//This just initializes the modal, leave here please
-
-$(document).ready(function() {
-
-  $("button").on("click", function(event) {
-    event.preventDefault();
-    var x = $(this).data("search");
-    console.log(x);
-
->>>>>>> e41eda6d3f60c14f804f24026698cf831b832768
     var queryURL = "https://taco-randomizer.herokuapp.com/random/";
     var tmp = "";
 
@@ -33,23 +21,8 @@ $(document).ready(function() {
             $("#sideTaco").html(tmp);
 
         });
-<<<<<<< HEAD
 
 
 
 }
 tacoGenerator();
-=======
-  });
-
-  // TEMPORARY TEST
-  var queryURL = "https://taco-randomizer.herokuapp.com/random/";
-
-  $.ajax({ url: queryURL, method: "GET" })
-      .done(function(response) {
-          console.log(response);
-
-  });
-
-});
->>>>>>> e41eda6d3f60c14f804f24026698cf831b832768
