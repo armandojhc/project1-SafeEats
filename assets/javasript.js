@@ -1,8 +1,10 @@
 M.AutoInit();//This just initializes the modal, leave here please
 
-//loadRecipes();
-
-$("#recipeBtn").click(function() {
+$(document).ready(function() {
+  //loadRecipes();
+  searchPage();
+  
+  $("#recipeBtn").click(function() {
     if($("#header").hasClass("greenSwitch")) {
         savedPage();
         //createList();
@@ -10,31 +12,33 @@ $("#recipeBtn").click(function() {
         searchPage();
     }
     return;
-});
+  });
+  
+  $(document).on("click", ".view", function() {
+      //var recipe = $(this).attr('id');
+      //search() -- use what it returns
+      getGif("cat");//instead of cat recipe var
+      $("#modalHeader").text("new header text");
+      $("#recipeContainer").text("new recipe content");
+      M.Modal.getInstance(recipeModal).open();
+      return;
+  });
 
-$(document).on("click", ".view", function() {
-    //var recipe = $(this).attr('id');
-    //search() -- use what it returns
-    getGif("cat");//instead of cat recipe var
-    $("#modalHeader").text("new header text");
-    $("#recipeContainer").text("new recipe content");
-    M.Modal.getInstance(recipeModal).open();
-    return;
-});
+  $(document).on("click", ".add", function() {
+      //var recipe = $(this).attr('id');
+      $(this).css("visibility", "hidden");
+      //saveRecipes(this thingy)
+      return;
+  });
 
-$(document).on("click", ".add", function() {
-    //var recipe = $(this).attr('id');
-    $(this).css("visibility", "hidden");
-    //saveRecipes(this thingy)
-    return;
-});
+  $(document).on("click", ".delete", function() {
+      //var recipe = $(this).attr('id');
+      //deleteRecipe(this thingy)
+      $("#main").empty();
+      //createList();
+      return;
+  });
 
-$(document).on("click", ".delete", function() {
-    //var recipe = $(this).attr('id');
-    //deleteRecipe(this thingy)
-    $("#main").empty();
-    //createList();
-    return;
 });
 
 function searchPage() {
@@ -79,7 +83,6 @@ function savedPage() {
     return;
 }
 
-
 function getGif(searchTerm) {
     
     var linkUrl = "https://api.giphy.com/v1/gifs/search?q="+searchTerm+"&limit=1&api_key=aNaCVPYDVjQethaqMIIwbmIElaUThThF";
@@ -94,3 +97,26 @@ function getGif(searchTerm) {
         $("#gifContainer").html(tmp);
     });
 }
+
+  $("button").on("click", function(event) {
+    event.preventDefault();
+    var x = $(this).data("search");
+    console.log(x);
+
+    var queryURL = "https://taco-randomizer.herokuapp.com/random/";
+
+    $.ajax({ url: queryURL, method: "GET" })
+        .done(function(reponse) {
+            console.log(response);
+
+        });
+  });
+
+  // TEMPORARY TEST
+  var queryURL = "https://taco-randomizer.herokuapp.com/random/";
+
+  $.ajax({ url: queryURL, method: "GET" })
+      .done(function(response) {
+          console.log(response);
+
+  });
