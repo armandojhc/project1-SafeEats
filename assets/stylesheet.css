@@ -41,7 +41,7 @@ body {
     margin-left: -11px;
 }
 
-.material-icons.md-24 { 
+.material-icons.md-24 {
     font-size: 24px;
     color: black;
 }
@@ -51,14 +51,15 @@ body {
     top: -6px;
 }
 
-#headerBtnContainer{
+#headerBtnContainer {
     height: 100%;
     font-size: 36px;
     padding: 16px;
     width: 156px;
 }
 
-#main,#sideTaco {
+#main,
+#sideTaco {
     border: 2px solid black;
     height: 400px;
     padding: 10px;
@@ -196,13 +197,21 @@ body {
 }
 
 @keyframes colorChangeIn {
-    from {background-color: forestgreen;}
-    to {background-color: white;}
+    from {
+        background-color: forestgreen;
+    }
+    to {
+        background-color: white;
+    }
 }
 
 @keyframes colorChangeOut {
-    from {background-color: white;}
-    to {background-color: forestgreen;}
+    from {
+        background-color: white;
+    }
+    to {
+        background-color: forestgreen;
+    }
 }
 
 @keyframes colorChangeInBlue {
@@ -226,16 +235,28 @@ body {
 }
 
 @keyframes btnColorIn {
-    from {background-color: transparent;}
-    to {background-color: white;}
+    from {
+        background-color: transparent;
+    }
+    to {
+        background-color: white;
+    }
 }
 
 @keyframes logoAnimateIn {
-    from {margin-left: 0px;}
-    to {margin-left: -80px;}
+    from {
+        margin-left: 0px;
+    }
+    to {
+        margin-left: -80px;
+    }
 }
 
 @keyframes logoAnimateOut {
-    from {margin-left: -80px;}
-    to {margin-left: 0px;}
+    from {
+        margin-left: -80px;
+    }
+    to {
+        margin-left: 0px;
+    }
 }
