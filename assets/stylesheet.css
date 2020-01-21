@@ -118,6 +118,16 @@ body {
     background-color:green;
     color: white;
 }
+
+/* #main { */
+
+/* } */
+
+/* #searchContainer {
+    background-color:;
+
+
+} */
 @keyframes recipeBtnColor {
     from {background-color: palegreen;color:black;}
     to {background-color: green;color:white;}
