@@ -2,7 +2,6 @@ M.AutoInit();//This just initializes the modal, leave here please
 
 $(document).ready(function() {
   //loadRecipes();
-  searchPage();
   
   $("#recipeBtn").click(function() {
     if($("#header").hasClass("greenSwitch")) {
