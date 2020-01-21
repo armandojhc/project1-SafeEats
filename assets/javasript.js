@@ -3,6 +3,8 @@ M.AutoInit();//This just initializes the modal, leave here please
 $(document).ready(function() {
   //loadRecipes();
   
+  tacoGenerator();
+
   $("#recipeBtn").click(function() {
     if($("#header").hasClass("greenSwitch")) {
         savedPage();
@@ -104,19 +106,17 @@ function tacoGenerator() {
     $.ajax({ url: queryURL, method: "GET" })
         .done(function(response) {
 
-            //
-            tmp += "<h5>Base Layer:</h5>";
+            tmp += "<h6>Base Layer:</h6>";
             tmp += "<p>" + response.base_layer.name + "</P>"
-            tmp += "<h5>Seasoning:</h5>";
+            tmp += "<h6>Seasoning:</h6>";
             tmp += "<p>" + response.seasoning.name + "</p>";
-            tmp += "<h5>Mixing:</h5>";
+            tmp += "<h6>Mixing:</h6>";
             tmp += "<p>" + response.mixin.name + "</P>"
-            tmp += "<h5>Shell:</h5>";
+            tmp += "<h6>Shell:</h6>";
             tmp += "<p>" + response.shell.name + "</p>";
-            tmp += "<h5>Condiment:</h5>";
+            tmp += "<h6>Condiment:</h6>";
             tmp += "<p>" + response.condiment.name + "</P>";
 
-            //
             $("#sideTaco").html(tmp);
 
         });

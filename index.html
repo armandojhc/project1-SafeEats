@@ -10,6 +10,10 @@
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
     <!-- Materialize css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
     <!-- Roboto font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <!-- Font icon -->
@@ -22,9 +26,11 @@
 
 <body>
 
-    <div class="container">
+<div class="container">
 
-        <header>
+    <header>
+        
+        <div class="row">
 
             <div id="header" class="greenSwitch">
                 
@@ -41,28 +47,24 @@
                 </div>
             </div> 
 
-        </header>
+        </div>
 
-        <div class="row">
+    </header>
 
-            <div class="col m8">
+    <div class="row">
+        
+        <div class="col m8">
 
-                <div id="main">
-                    id='main'
-                </div>
-
+            <div id="main">
+                id='main'
             </div>
 
-            <div class="col m4">
+        </div>
 
-                <div id="sideTaco">
-                    id='sideTaco'
-                </div>
-
-            </div>
+        <div class="col m4">
 
             <div id="sideTaco">
-
+                id='sideTaco'
             </div>
 
         </div>
@@ -76,14 +78,12 @@
     
     To open the model, either add href="#recipeModal" to a link
     or add data-target="recipeModal" to a button.
-
     It can be opened through javascript with
     'M.Modal.getInstance(recipeModal).open();'
     which can be pasted in the chrome console
     or used in the javascript 
     (after updating modal text, that can be called)
 -->
-  
 <div id="recipeModal" class="modal bottom-sheet">
     <div class="modal-header">
         <a href="#!" class="modal-close waves-effect waves-green btn-flat right"><h6>X</h6></a>
@@ -99,14 +99,12 @@
     
 </div>
 
+
 </body>
 
 <!-- Materialize Javascript-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script defer src="assets/searchFunction.js"></script>
-<!-- jQuery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <!-- Our Javascript-->
 <script src="assets/javasript.js"></script>
-
 </html>

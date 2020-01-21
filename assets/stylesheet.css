@@ -58,8 +58,7 @@ body {
     width: 156px;
 }
 
-#main,
-#sideTaco {
+#main, #sideTaco {
     border: 2px solid black;
     height: 400px;
     padding: 10px;
@@ -138,6 +137,7 @@ body {
     background-color:green;
     color: white;
 }
+
 @keyframes recipeBtnColor {
     from {background-color: palegreen;color:black;}
     to {background-color: green;color:white;}
