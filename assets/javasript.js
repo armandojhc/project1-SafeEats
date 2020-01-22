@@ -126,7 +126,7 @@ function tacoGenerator() {
 
     $.ajax({ url: queryURL, method: "GET" })
         .done(function(response) {
-
+            tmp += "<h5>TACO OF THE DAY</h6>"
             tmp += "<h6>Base Layer:</h6>";
             tmp += "<p>" + response.base_layer.name + "</P>"
             tmp += "<h6>Seasoning:</h6>";
