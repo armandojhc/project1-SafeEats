@@ -5,15 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
+
     <!-- Site icon -->
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
     <!-- Materialize css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <script
-        src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <!-- Roboto font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <!-- Font icon -->
@@ -26,66 +23,66 @@
 
 <body>
 
-<div class="container">
+    <div class="container">
 
-    <header>
-        
+        <header>
+
+            <div class="row">
+
+                <div id="header" class="greenSwitch">
+
+                    <div class="col m9" id="logoContainer">
+                        <img src="assets/images/logo.png" alt="Safe Eats Logo" id="logo">
+                    </div>
+
+                    <div class="col m3" id="headerBtnContainer">
+                        <a class="waves-effect waves-orange grey lighten-5 btn right" id="recipeBtn">
+                            <i class="material-icons md-24">menu_book</i>
+                            <!-- The recipe button has a seperate span tag so its text can be easily changed to 'Back' once clicked -->
+                            <span id="btnTxt"> Recipes</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </header>
+
         <div class="row">
 
-            <div id="header" class="greenSwitch">
-                
-                <div class="col m9" id="logoContainer">
-                    <img src="assets/images/logo.png" alt="Safe Eats Logo" id="logo">
-                </div> 
+            <div class="col m8">
 
-                <div class="col m3" id="headerBtnContainer">
-                    <a class="waves-effect waves-orange grey lighten-5 btn right" id="recipeBtn">
-                        <i class="material-icons md-24">menu_book</i>
-                        <!-- The recipe button has a seperate span tag so its text can be easily changed to 'Back' once clicked -->
-                        <span id="btnTxt"> Recipes</span>
-                    </a>
-                </div>
-            </div> 
-
-        </div>
-
-    </header>
-
-    <div class="row">
-        
-        <div class="col m8">
-
-            <div id="main">
-                <div id="searchContainer" class="col m12">
-                    <input id= "recipeSearchBar" placeholder="Search Recipes"/>
-                    <input id="excludingSearch" placeholder="Exclude"/>
-                    <div class="input-field col s12">
-                        <select multiple id="healthExclusion">
+                <div id="main">
+                    <div id="searchContainer" class="col m12">
+                        <input id="recipeSearchBar" placeholder="Search Recipes" />
+                        <input id="excludingSearch" placeholder="Exclude" />
+                        <div class="input-field col s12">
+                            <select multiple id="healthExclusion">
                           <option value="" disabled selected>Health Exclusions</option>
                           <option value="alcohol-free">Alcohol Free</option>
                           <option value="celery-free">Celery Free</option>
                           <option value="3">Option 3</option>
                         </select>
-                      </div>
-                    <a class="waves-effect waves-light btn-small" id= "mainSearchButton">Button</a>
+                        </div>
+                        <a class="waves-effect waves-light btn-small" id="mainSearchButton">Button</a>
+                    </div>
                 </div>
+
             </div>
 
-        </div>
+            <div class="col m4">
 
-        <div class="col m4">
+                <div id="sideTaco">
+                    id='sideTaco'
+                </div>
 
-            <div id="sideTaco">
-                id='sideTaco'
             </div>
 
         </div>
 
     </div>
 
-</div>
-
-<!-- Below is Materialize's modal. The text can be changed
+    <!-- Below is Materialize's modal. The text can be changed
     and updated using the '#modalHeader' and '#recipeContainer' ids.
     
     To open the model, either add href="#recipeModal" to a link
@@ -96,20 +93,22 @@
     or used in the javascript 
     (after updating modal text, that can be called)
 -->
-<div id="recipeModal" class="modal bottom-sheet">
-    <div class="modal-header">
-        <a href="#!" class="modal-close waves-effect waves-green btn-flat right"><h6>X</h6></a>
-    </div>
-    <div class="modal-content">
-        <h4 id="modalHeader">Recipe Name</h4>
-        <div id="modalBody">
-            <div id="gifContainer">Gif Here</div>
-            <div id="recipeContainer">Recipe Here</div>
-            <button href="#!" class="modal-close" id="goToRecipeBtn">Go To Recipe</button>
+    <div id="recipeModal" class="modal bottom-sheet">
+        <div class="modal-header">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat right">
+                <h6>X</h6>
+            </a>
         </div>
+        <div class="modal-content">
+            <h4 id="modalHeader">Recipe Name</h4>
+            <div id="modalBody">
+                <div id="gifContainer">Gif Here</div>
+                <div id="recipeContainer">Recipe Here</div>
+                <button href="#!" class="modal-close" id="goToRecipeBtn">Go To Recipe</button>
+            </div>
+        </div>
+
     </div>
-    
-</div>
 
 
 </body>
@@ -119,4 +118,5 @@
 <script defer src="assets/searchFunction.js"></script>
 <!-- Our Javascript-->
 <script src="assets/javasript.js"></script>
+
 </html>
