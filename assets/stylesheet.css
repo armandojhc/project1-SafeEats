@@ -160,10 +160,6 @@ p {
     margin: 10px;
 }
 
-#sideTaco {
-    margin-top: 20px;
-}
-
 @keyframes recipeBtnColor {
     from {
         background-color: palegreen;
