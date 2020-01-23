@@ -179,7 +179,7 @@ h6 {
 }
 
 .saved1, .saved2 {
-    background-color: darksalmon;
+    background-color: rgb(255, 193, 77);
     min-height: 50px;
     font-size: 20px;
     line-height: 50px;
