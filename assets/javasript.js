@@ -22,16 +22,11 @@ $(document).ready(function() {
       var mainIngredientExclusion = $('#excludingSearch').val();
 
       // Grabs Selected Values from drop down 
-      var instance = M.FormSelect.getInstance($('#healthExclusion'));
-      var healthExclusionList = instance.getSelectedValues();
-      console.log(healthExclusionList);
-      // Turns those values that are actually put on an array and with the .join method makes them one big string.
-      var healthExclusionString = healthExclusionList.join(",");
-      console.log(healthExclusionString);
+      
   
       // Calling the searchRecipe function which makes the API call to extract the recipies based on the search criteria 
   
-      searchRecipe( mainSearchTerm , mainIngredientExclusion , healthExclusionString);
+      searchRecipe( mainSearchTerm , mainIngredientExclusion , "");
 
       resultPage();
 
