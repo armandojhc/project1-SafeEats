@@ -56,15 +56,16 @@
         <div class="col m8">
 
             <div id="main">
-                <div id="searchContainer" class="col m12">
+                <div id="searchContainer" style="display: none" class="col m12">
+                    <span id="recipe-required">You must enter a search term.</span>
                     <input id= "recipeSearchBar" placeholder="Search Recipes"/>
                     <input id="excludingSearch" placeholder="Exclude"/>
                     <div class="input-field col s12">
                         <select multiple id="healthExclusion">
-                          <option value="" disabled selected>Health Exclusions</option>
-                          <option value="alcohol-free">Alcohol Free</option>
-                          <option value="celery-free">Celery Free</option>
-                          <option value="3">Option 3</option>
+                          <!-- <option value="" disabled selected>Health Exclusions</option> -->
+                          <option value="alcohol-free">Alcohol-free</option>
+                          <option value="peanut-free">Peanut-free</option>
+                          <option value="tree-nut-free">Tree nut-free</option>
                         </select>
                       </div>
                     <a class="waves-effect waves-light btn-small" id= "mainSearchButton">Button</a>

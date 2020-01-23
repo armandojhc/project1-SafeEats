@@ -11,7 +11,15 @@ $(document).ready(function() {
       event.preventDefault();
       var x = $(this).data("search");
       console.log(x);
-        
+      
+      // Grabs the input of the search bar
+
+      var mainSearchTerm = $('#recipeSearchBar').val();
+
+      // Grabs the input of the excluding ingredient 
+
+      var mainIngredientExclusion = $('#excludingSearch').val();
+
       // Grabs Selected Values from drop down 
       var instance = M.FormSelect.getInstance($('#healthExclusion'));
       var healthExclusionList = instance.getSelectedValues();
@@ -22,7 +30,9 @@ $(document).ready(function() {
   
       // Calling the searchRecipe function which makes the API call to extract the recipies based on the search criteria 
   
-      searchRecipe($('#recipeSearchBar').val() , healthExclusionString , $('#exludingSearch').val());
+      searchRecipe( mainSearchTerm , mainIngredientExclusion , healthExclusionString);
+
+      // console.log(searchRecipe);
   
   });
 
