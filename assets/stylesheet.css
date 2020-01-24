@@ -83,6 +83,11 @@ h6 {
     margin-top: 5px;
 }
 
+#sideTaco {
+    width: 100%;
+    overflow-y: scroll;
+}
+
 #recipe-required {
     color: red;
     display: none;
@@ -136,6 +141,17 @@ h6 {
 #recipeModal::-webkit-scrollbar-thumb {
     background-color: seagreen;
     border-radius: 0px 15px 15px 0px;
+}
+
+#sideTaco::-webkit-scrollbar {
+    width: 5px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#sideTaco::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 5px;
 }
 
 #btnTxt {
@@ -228,15 +244,23 @@ p {
         color: white;
     }
 }
-
-@media only screen and (max-width: 600px) {
-    #sideTaco {
-        padding-left: 150px;
-        padding-right: 150px;
-        max-width: 497px;
-        overflow-y: scroll;
+@media only screen and (max-width: 481px) {
+    #header {
+        overflow: visible;
+    }
+    #logo {
+        width: 100%;
+        margin-left: 70px;
     }
 }
+/* @media only screen and (max-width: 600px) {
+    #sideTaco {
+        display: block;
+        width: 100%;
+        overflow-y: scroll;
+    }
+
+} */
 
 @media only screen and (max-width: 784px) {
     #logoContainer {
