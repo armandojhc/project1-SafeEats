@@ -5,6 +5,10 @@ body {
     background-position: center;
 }
 
+h6 {
+    font-weight: bolder;
+}
+
 .container {
     background-color: white;
     opacity: 85%;
@@ -14,15 +18,22 @@ body {
     border-radius: 10px;
 }
 
-#header,
-.blueSwitch,
-.yellowSwitch,
-.greenSwitch {
+#searchContainer {
+    margin: 50px 10px;
+}
+
+#header, .blueSwitch, .yellowSwitch, .greenSwitch {
     height: 75px;
     margin: 15px 10px 0px 10px;
     border: 2px solid black;
     overflow: hidden;
     text-align: initial;
+}
+
+#recipeList {
+    width: 100%;
+    height: 400px;
+    background-color: red;
 }
 
 .greenSwitch {
@@ -68,6 +79,12 @@ body {
     border: 2px solid black;
     height: 400px;
     padding: 10px;
+    margin-top: 5px;
+}
+
+#recipe-required {
+    color: red;
+    display: none;
 }
 
 #recipeModal {
@@ -106,6 +123,7 @@ body {
     border-radius: 0px 0px 10px 10px;
     padding: 10px;
     background-color: white;
+    text-align: left;
 }
 
 #recipeModal::-webkit-scrollbar {
@@ -126,6 +144,14 @@ body {
 
 .btn {
     width: 100%;
+}
+
+.big {
+    margin-top: 150px;
+}
+
+.hlpTxt1 {
+    text-align: left;
 }
 
 #goToRecipeBtn {
@@ -158,6 +184,30 @@ h6 {
 
 p {
     margin: 10px;
+
+.recBtn {
+    float: right;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.recipeName {
+    text-overflow: ellipsis;
+}
+
+.saved1, .saved2 {
+    background-color: rgb(255, 193, 77);
+    min-height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+    border-radius: 5px;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.saved2 {
+    background-color: rgb(255, 235, 154);
+
 }
 
 @keyframes recipeBtnColor {
@@ -168,6 +218,15 @@ p {
     to {
         background-color: green;
         color: white;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #sideTaco {
+        padding-left: 150px;
+        padding-right: 150px;
+        max-width: 497px;
+        overflow-y: scroll;
     }
 }
 
@@ -198,6 +257,9 @@ p {
         animation-name: colorChangeInYellow;
         animation-duration: 1s;
         background-color: white;
+    }
+    #main {
+        margin-bottom: 20px;
     }
 }
 
