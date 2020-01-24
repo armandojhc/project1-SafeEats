@@ -18,17 +18,41 @@ Clicking on the add button will store the recipe array in localStorage. The user
 
 Step 1 - Open webpage and in the search bar titled “Recipe?” enter a dish or ingredient to search for.
 
+![Alt text](/assets/images/Screenshot_1.jpg);
+
+![Alt text](/assets/images/Screenshot_2.jpg);
+
 Step 2 (OPTIONAL) - Under the main search bar the user has the option to enter an ingredient that they would like to filter out of the search results.
 
 Step 3 - Click SEARCH
 
 Step 4 - Navigate through the recipe results list and click VIEW and/or ADD buttons.
 
-Step 5 - Click on the back button at the top right corner of the header.
+![Alt text](/assets/images/Screenshot_3.jpg);
+
+![Alt text](/assets/images/Screenshot_4.jpg);
+
+![Alt text](/assets/images/Screenshot_5.jpg);
+
+![Alt text](/assets/images/Screenshot_6.jpg);
+
+![Alt text](/assets/images/Screenshot_7.jpg);
+
+Step 5 - Click on the back button at the top right corner of the header. This will take you back to the main home page.
+
+![Alt text](/assets/images/Screenshot_8.jpg);
 
 Step 6 - Click on the Recipes button and you should be able to view all added recipes.
 
+![Alt text](/assets/images/Screenshot_9.jpg);
+
+![Alt text](/assets/images/Screenshot_10.jpg);
+
 Step 7 (Optional ) - Click on DELETE in order to remove the recipe from your localstorage list.
+
+![Alt text](/assets/images/Screenshot_11.jpg);
+
+
 
  The live page link is:
 
