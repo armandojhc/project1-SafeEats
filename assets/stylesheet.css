@@ -1,7 +1,8 @@
 body {
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    background-color: lemonchiffon;
+    background-image: url(https://southlandssun.co.za/wp-content/uploads/sites/40/2016/11/easy-cooking-hacks-for-eating-he.jpg);
+    background-position: center;
 }
 
 h6 {
@@ -10,7 +11,8 @@ h6 {
 
 .container {
     background-color: white;
-    margin-top: 150px;
+    opacity: 85%;
+    margin-top: 80px;
     border: 2px solid transparent;
     box-shadow: 0px 0px 50px 1px rgba(0, 0, 0, 0.432);
     border-radius: 10px;
@@ -168,6 +170,21 @@ h6 {
     color: white;
 }
 
+h5 {
+    color: orange;
+    font-weight: bolder;
+    font-style: italic;
+    margin-top: 0px;
+}
+
+h6 {
+    font-weight: bold;
+    margin: 10px;
+}
+
+p {
+    margin: 10px;
+
 .recBtn {
     float: right;
     margin-right: 20px;
@@ -190,6 +207,7 @@ h6 {
 
 .saved2 {
     background-color: rgb(255, 235, 154);
+
 }
 
 @keyframes recipeBtnColor {
