@@ -10,8 +10,7 @@ h6 {
 }
 
 .container {
-    background-color: white;
-    opacity: 85%;
+    background-color: rgba(255, 255, 255, 0.85);
     margin-top: 80px;
     border: 2px solid transparent;
     box-shadow: 0px 0px 50px 1px rgba(0, 0, 0, 0.432);
@@ -25,7 +24,8 @@ h6 {
 #header, .blueSwitch, .yellowSwitch, .greenSwitch {
     height: 75px;
     margin: 15px 10px 0px 10px;
-    border: 2px solid black;
+    border: 2px solid rgb(177, 177, 177);
+    border-radius: 5px;
     overflow: hidden;
     text-align: initial;
 }
@@ -76,10 +76,15 @@ h6 {
 
 #main,
 #sideTaco {
-    border: 2px solid black;
+    border: 2px solid rgb(177, 177, 177);
+    border-radius: 5px;
     height: 400px;
     padding: 10px;
     margin-top: 5px;
+}
+
+#main {
+    opacity: 1;
 }
 
 #recipe-required {
