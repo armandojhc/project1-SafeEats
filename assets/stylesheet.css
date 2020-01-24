@@ -23,10 +23,15 @@ body {
     text-align: initial;
 }
 
-#recipeList {
+.search-result-row {
     width: 100%;
-    height: 400px;
-    background-color: red;
+    
+    height: 50px;
+    border-bottom: solid 1px black;
+}
+
+.search-recipe-row-cell {
+    float: left;
 }
 
 .greenSwitch {

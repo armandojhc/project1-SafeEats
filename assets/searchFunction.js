@@ -1,4 +1,4 @@
-function searchRecipe (recipeTerm , ingredientExclusion ,  healthExclusion  ) {
+function searchRecipe (recipeTerm , ingredientExclusion ) {
     if (!recipeTerm) {
         //maybe we can show a message that says "This field is required" 
         //for now we can use alert but we want to remove that eventually (alerts look bad)
@@ -11,24 +11,27 @@ function searchRecipe (recipeTerm , ingredientExclusion ,  healthExclusion  ) {
         if ( ingredientExclusion ) {
             queryUrl += '&excluded=' + ingredientExclusion.trim();
         }
-
-        if ( healthExclusion ) {
-            queryUrl += '&health=' + healthExclusion.trim();
-        }
         
-        console.log(queryUrl);
         $.ajax({
             url: queryUrl,
             method: "GET"
         }).done( function (response) {
 
-            console.log(response);
+            console.log(response.hits);
+
+            // showResults(response.hits);
 
 
         });
     }
 
  }
+
+//  Recommend to create a new function that loops through the response.hits array and then popula
+
+function showResults(results) {
+
+}
 
 //  searchRecipe();
 
