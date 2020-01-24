@@ -83,10 +83,6 @@ h6 {
     margin-top: 5px;
 }
 
-#main {
-    opacity: 1;
-}
-
 #recipe-required {
     color: red;
     display: none;
@@ -159,16 +155,22 @@ h6 {
     text-align: left;
 }
 
-#goToRecipeBtn {
+.goToRecipeBtn {
+    display: block;
+    margin: 0 auto;
     margin-top: 30px;
+    line-height: 10px;
     height: 50px;
     background-color: palegreen;
+    color: black;
+    border: 2px solid palegreen;
     border-radius: 15px;
-    font-size: 25px;
+    font-size: 20px;
     width: 80%;
+    padding: 20px;
 }
 
-#goToRecipeBtn:hover {
+.goToRecipeBtn:hover {
     animation-name: recipeBtnColor;
     animation-duration: 500ms;
     background-color: green;

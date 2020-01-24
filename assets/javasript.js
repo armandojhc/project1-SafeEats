@@ -168,6 +168,9 @@ function search() {
         method: "GET"
     }).done(function (response) {
         responseGlobal = response;
+        if(response.hits.length === 0) {
+            return;
+        }
         console.log(response);
         resultPage();
         createList(false);
