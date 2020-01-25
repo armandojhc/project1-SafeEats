@@ -80,7 +80,7 @@ function searchPage() {
         $("#header").toggleClass("yellowSwitch");
     }
     $("#header").toggleClass("greenSwitch");
-    $("#main").html("<div class='row' id='searchContainer'><form class='col s12'><div class='row'><div class='input-field col s12'><input id='recipeSearch' type='text'><label for='recipeSearch'>Recipe?</label><span class='helper-text hlpTxt1'></span></div><div class='input-field col s12'><input id='excludingSearch' type='text' class='validate'><label for='excludingSearch'>Unwanted ingredients?</label><span class='helper-text hlpTxt2' style='text-align: left;'>Optional</span></div><div class='input-field col s12'><a class='waves-effect waves-light btn-small mainSearchButton'>Search</a></div></div></form></div>");
+    $("#main").html("<div class='row' id='searchContainer'><form class='col s12'><div class='row'><div class='input-field col s12'><i class='material-icons md-24 md-dark prefix'>search</i><input id='recipeSearch' type='text'><label for='recipeSearch'>Search for your new favorite recipe</label><span class='helper-text hlpTxt1'></span></div><div class='input-field col s12'><i class='material-icons md-24 md-dark prefix'>not_interested</i><input id='excludingSearch' type='text' class='validate'><label for='excludingSearch'>Add ingredients to exclude here</label><span class='helper-text hlpTxt2' style='text-align: left;'>Optional</span></div><div class='input-field col s12'><a class='waves-effect waves-light btn-small mainSearchButton'>Search</a></div></div></form></div>");
     return;
 }
 
